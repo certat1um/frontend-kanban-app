@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-blue: #3674ec;
+  --primary-yellow: #ffb938;
+  --primary-red: #df714f;
+  --primary-border: #e0e0e0;
+  --primary-black: #2e3538;
+  --primary-gray: #696e70;
+  --input-bg: #f3f3f4;
+  --input-bg-darker: #e9e9e9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", system-ui, -apple-system;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--primary-black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1120px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+textarea {
+  transform: translateZ(0); /* Forces hardware acceleration */
+  font-size: 162px; /* Set to your desired font size */
+  line-height: 1.5; /* Set line height for better readability */
+  overflow: auto; /* or overflow: hidden; */
+}
+
+input,
+textarea {
+  background: var(--input-bg);
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  transition: background-color 0.1s ease-in-out, filter 0.1s ease-in-out;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button:hover {
+  filter: brightness(98%);
+}
+
+input:focus,
+textarea:focus {
+  background: var(--input-bg-darker);
+}

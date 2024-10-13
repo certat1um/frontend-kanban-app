@@ -1,0 +1,52 @@
+.card {
+  position: relative;
+  cursor: pointer;
+  padding: 15px 18px;
+  border: 1px solid var(--primary-border);
+  border-radius: 10px;
+  gap: 10px;
+  width: 310px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background: #fff;
+  transition: background-color 0.1s ease-in-out, filter 0.1s ease-in-out;
+}
+
+.card:hover {
+  filter: brightness(95%);
+}
+
+.card:last-child {
+  margin-bottom: 10px;
+}
+
+.card_title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card_description {
+  font-style: italic;
+  color: var(--primary-gray);
+  font-weight: 400;
+  font-size: 15px;
+  word-wrap: break-word; /* Ensures long words break within the block */
+  word-break: break-word; /* Breaks words when necessary */
+}
+
+.card_delete_btn {
+  position: absolute;
+  top: 10px;
+  right: 11px;
+  border: none;
+  padding: 2px;
+  z-index: 50;
+  background: transparent;
+}
+
+.card_delete_btn img {
+  width: 15px;
+}

@@ -1,0 +1,22 @@
+.drow_down {
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  gap: 4px;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+}
+
+.drow_down_item {
+  font-size: 14px;
+  width: 100%;
+  color: #fff;
+}
