@@ -5,7 +5,6 @@ import { RootState } from "../../redux/store";
 
 function Board() {
   const boardData = useSelector((state: RootState) => state.board.board);
-  console.log(boardData);
 
   const renderEmptyBoard = () => {
     return <>No board.</>;
