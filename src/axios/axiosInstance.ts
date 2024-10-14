@@ -9,7 +9,7 @@ class AxiosInstance {
 
   constructor() {
     this.instance = axios.create({
-      baseURL: "http://localhost:3333/api",
+      baseURL: process.env.REACT_APP_SERVER_URL,
       headers: { "Content-Type": "application/json" },
     });
   }
